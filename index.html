@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vuetorial</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+    <div id='app-7'>
+        <ol>
+            <!--
+                각 todo-item에 todo객체를 제공
+                화면에 나오므로, 각 항목의 컨텐츠는 동적변경가능
+                "키"를 제공해야함
+            -->
+            <todo-item
+                v-for="item in groceryList"
+                v-bind:todo="item"
+                v-bind:key="item.id">
+           </todo-item>
+        </ol>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
