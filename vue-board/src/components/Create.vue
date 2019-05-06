@@ -26,7 +26,7 @@ export default {
             this.data.push({ // 데이터의 배열에 객체를 push
                 writer: this.writer,
                 title: this.title,
-                content: this.content
+                content: this.content 
             })
             this.$router.push({ // 작성되면 read(메인)화면으로 돌아감
                 path: '/'

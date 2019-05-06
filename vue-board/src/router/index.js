@@ -23,6 +23,6 @@ export default new Router({
       path: '/detail/:contentId', // /detail 페이지 ( 파라미터가 들어갈 자리: contentId )
       name: 'Detail',
       component: Detail
-    },
+    }, 
   ]
 })
