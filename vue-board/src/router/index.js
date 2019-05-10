@@ -15,7 +15,8 @@ export default new Router({
       component: Read
     },
     {
-      path: '/create', // /create 경로에 글쓰기기능
+      // ?를 붙이면 contentId가 있으면 보여주고 없어도 보여줌
+      path: '/create/:contentId?', // /create 경로에 글쓰기기능
       name: 'Create',
       component: Create
     },
